@@ -1,45 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio - Sylvain</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .project-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .project-card a:hover {
+            background: #45a049;
+        }
+
+        .github-link {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .github-link a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .github-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
-    <h1>Cours github</h1>
-    <h2>Version 2</h2>
+    <div class="container">
+        <h1>Mon Portfolio</h1>
+        <p class="subtitle">Mes projets web</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus asperiores corporis quaerat nihil est! Odit,
-        alias molestias a illo minima distinctio accusamus labore voluptates, id doloribus sunt voluptas perspiciatis
-        nobis nemo asperiores. Nemo inventore cumque molestias doloribus, vitae numquam provident temporibus eaque.
-        Nulla, adipisci? Placeat fugit dicta dignissimos at totam, sapiente iure illo numquam quaerat adipisci atque aut
-        facilis hic repellendus obcaecati minima qui ipsa magni perferendis. Adipisci, amet dolore consequatur tempora
-        nostrum ullam soluta odio temporibus id exercitationem quos nobis quo officiis cupiditate voluptate dolor, a,
-        enim sint officia. Ex iste, nihil vel iusto dolor illo. Sequi modi rerum nemo ratione possimus deleniti
-        repudiandae labore eos nostrum, illum, necessitatibus consequuntur ad tenetur natus sunt, laboriosam repellat id
-        neque voluptates? Quasi aliquam reiciendis possimus quam aliquid, consectetur rerum ratione ad? Voluptates minus
-        sit voluptatibus delectus. Modi vitae dolorum fugiat debitis deleniti. Accusamus expedita aspernatur dolores
-        unde voluptatibus libero odit, nobis porro impedit corporis repudiandae? Voluptatum expedita, tenetur quos ipsam
-        illum explicabo aliquid odit iusto magnam quasi corrupti sequi vero voluptate velit reprehenderit, ratione ab
-        adipisci corporis suscipit ullam animi. Consequuntur repellat porro possimus sit cumque nesciunt reiciendis
-        tempora labore reprehenderit minus cum debitis architecto atque culpa quisquam adipisci, quia perferendis
-        laborum, quis obcaecati pariatur sed dolor ea nostrum. Eligendi provident maiores aperiam esse, modi accusamus
-        beatae natus odit consectetur suscipit? Amet, eum quod corrupti debitis consectetur nulla. Numquam, doloremque!
-        Autem mollitia placeat id, vel consequuntur explicabo quae, ex, quo reprehenderit dolores dolore. Perspiciatis
-        veniam illo repudiandae? Voluptatibus, non, quibusdam dolorem sapiente dignissimos distinctio modi ipsa
-        accusantium quasi, ex labore vel rem illo molestiae quos provident deleniti et culpa saepe consequatur
-        consequuntur odit maiores aspernatur minus. Mollitia fugit laborum animi, fuga unde error! Voluptatem expedita
-        reiciendis error, dignissimos adipisci explicabo eum nesciunt sunt cumque amet ipsam ipsa dolorum quis illo
-        quibusdam, quasi numquam molestias tempora. Sed, esse nulla impedit porro dolorum repellat similique provident
-        accusamus odit repudiandae nobis consequatur voluptatem. Quia facere ex ea repellat eveniet rerum saepe.
-        Blanditiis quo, deserunt laboriosam illo at cupiditate fugiat nesciunt eum enim animi ipsa expedita aperiam
-        quam, ipsum maiores quas, magni distinctio nihil? Corporis quos deserunt, non nesciunt incidunt suscipit quis
-        dolorem delectus debitis perferendis cumque natus voluptates libero in accusamus quas, rem officia. Repellendus
-        tenetur consectetur voluptatem doloribus architecto perferendis accusamus neque nihil ex modi voluptatibus qui
-        illo consequuntur sed debitis a, laudantium ipsam sit commodi provident fuga harum quos. Accusantium, repellat
-        assumenda!</p>
+        <div class="projects">
+            <div class="project-card">
+                <h3>GitHub Cours</h3>
+                <p>Mon premier projet pour apprendre GitHub</p>
+                <a href="github-cours/index.html">Voir le site</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Gaming Campus</h3>
+                <p>Site web pour un campus de gaming</p>
+                <a href="Gaming-campus/index.html">Voir le site</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Deuxième Site CSS</h3>
+                <p>Projet pour apprendre le CSS</p>
+                <a href="deuxieme-site-css/index.html">Voir le site</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Premier Site CSS</h3>
+                <p>Mon premier projet CSS</p>
+                <a href="Premier-site-CSS/index.html">Voir le site</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Premier Site SASS</h3>
+                <p>Apprentissage de SASS/SCSS</p>
+                <a href="Premier-site-SASS/index.html">Voir le site</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Helium</h3>
+                <p>Site web Helium</p>
+                <a href="helium/index.html">Voir le site</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Le Resto</h3>
+                <p>Site web de restaurant</p>
+                <a href="Le-resto/index.html">Voir le site</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Integration Run</h3>
+                <p>Projet d'intégration web</p>
+                <a href="Integration-run/index.html">Voir le site</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Scroll Navbar</h3>
+                <p>Navigation avec effet de scroll</p>
+                <a href="Scroll-navbar/index.html">Voir le site</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Scroll Popup</h3>
+                <p>Popup avec effet de scroll</p>
+                <a href="Scroll-Popup/index.html">Voir le site</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Générateur de Bulles</h3>
+                <p>Application JavaScript interactive</p>
+                <a href="generateur-de-bulles/index.html">Voir le site</a>
+            </div>
+        </div>
+
+        <div class="github-link">
+            <p><a href="https://github.com/Sylvain-code815" target="_blank">Mon GitHub</a></p>
+        </div>
+    </div>
 </body>
-
 </html>
