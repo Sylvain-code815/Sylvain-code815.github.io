@@ -752,6 +752,14 @@ section {
     content: '\f09b';
 }
 
+.project-portfolio-racine .project-image {
+    background: linear-gradient(135deg, #E85529, #FF6B35, #1A1A1A);
+}
+
+.project-portfolio-racine .project-image::before {
+    content: '\f0c0';
+}
+
 .project-overlay {
     position: absolute;
     top: 0;
