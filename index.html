@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Sylvain - Développeur Web Front-end spécialisé en HTML, CSS, JavaScript et SASS">
+    <title>Sylvain - Portfolio Développeur Web</title>
+    <link rel="stylesheet" href="portfolio-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Sylvain<span class="logo-dot">.</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="cv/CV-2026-dev.pdf" class="nav-link nav-cv" download>CV</a></li>
+                <li class="nav-social">
+                    <a href="https://github.com/Sylvain-code815" target="_blank" class="nav-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="nav-social">
+                    <a href="https://www.linkedin.com/in/sylvain-laurent-99b23120b/" target="_blank" class="nav-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Bonjour, je suis <span class="highlight">Sylvain</span>
+                </h1>
+                <p class="hero-subtitle">Développeur Web Front-end</p>
+                <p class="hero-description">
+                    Passionné par la création d'expériences web modernes et interactives.
+                    Spécialisé en HTML, CSS, JavaScript et design créatif.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Voir mes projets</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Me contacter</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="img/Photo prix.png" alt="Sylvain - Développeur Web">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">À propos de moi</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Tout au long de mon parcours, j'ai cherché à faire un métier qui me tenait à coeur.
+                        Cette volonté m'a mené à tester de nombreux domaines : manuel, administratif, professorat...
+                    </p>
+                    <p class="about-description">
+                        L'informatique m'a toujours intéressé, mais ayant jusqu'ici un parcours assez littéraire,
+                        j'ai toujours repoussé cette envie de me tourner vers ce domaine.
+                        Avec l'aide de mon entourage et d'amis travaillant dans le domaine, je me suis finalement lancé.
+                    </p>
+                </div>
+
+                <div class="parcours-grid">
+                    <div class="parcours-item">
+                        <div class="parcours-image">
+                            <img src="img/parcours/ARS-admin.jpg" alt="Administration">
+                        </div>
+                        <h4>Administratif</h4>
+                    </div>
+                    <div class="parcours-item">
+                        <div class="parcours-image">
+                            <img src="img/parcours/Charpente-Bonnet.jpg" alt="Charpente">
+                        </div>
+                        <h4>Manuel</h4>
+                    </div>
+                    <div class="parcours-item">
+                        <div class="parcours-image">
+                            <img src="img/parcours/Prof-des-écoles.jpg" alt="Professeur des écoles">
+                        </div>
+                        <h4>Professorat</h4>
+                    </div>
+                    <div class="parcours-item">
+                        <div class="parcours-image">
+                            <img src="img/parcours/dev.jpeg" alt="Développeur">
+                        </div>
+                        <h4>Développement</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Compétences</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Soft Skills -->
+            <h3 class="skills-subtitle">Soft Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Rigueur administrative</h3>
+                    <p>Organisation méthodique et attention aux détails dans la gestion de projets</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Capacité d'adaptation</h3>
+                    <p>Aptitude à apprendre rapidement de nouvelles notions et technologies</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Sens du collectif</h3>
+                    <p>Entraide, partage de connaissances et dépassement de soi en équipe</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Analyse de besoin</h3>
+                    <p>Compréhension et traduction des besoins clients en solutions techniques</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Gestion de projet</h3>
+                    <p>Maîtrise des bases de la planification et du suivi de projets</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design & UX/UI</h3>
+                    <p>Création d'interfaces utilisateur intuitives et esthétiques</p>
+                </div>
+            </div>
+
+            <!-- Langages & Frameworks -->
+            <div class="tech-stack">
+                <h3>Langages informatiques</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">Animations CSS</span>
+                    <span class="tech-badge">SASS</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Animations JS</span>
+                    <span class="tech-badge">Git</span>
+                    <span class="tech-badge">Merise</span>
+                    <span class="tech-badge">SQL</span>
+                    <span class="tech-badge">Algorithme</span>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <h3>Frameworks</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">Node.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mes Projets</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Une sélection de mes projets web récents</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Gaming Campus -->
+                <div class="project-card project-gaming-campus" data-category="html-css">
+                    <div class="project-image">
+                        <img src="img/projets/campus.png" alt="Gaming Campus">
+                        <div class="project-overlay">
+                            <a href="Gaming-campus/index.html" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Gaming Campus</h3>
+                        <p>Site web moderne pour un campus de gaming avec design immersif</p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <strong>Compétences</strong>
+                                    <p>HTML5, CSS3, Responsive Design</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-bullseye"></i>
+                                <div>
+                                    <strong>Objectif</strong>
+                                    <p>Créer un site moderne pour un campus gaming</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Résultat</strong>
+                                    <p>Site responsive avec design immersif</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <a href="Gaming-campus/index.html" class="project-btn" target="_blank">
+                            Voir le projet <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Helium -->
+                <div class="project-card project-helium" data-category="html-css">
+                    <div class="project-image">
+                        <img src="img/projets/Helium.png" alt="Helium">
+                        <div class="project-overlay">
+                            <a href="helium/index.html" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Helium</h3>
+                        <p>Site web élégant avec design moderne et animations fluides</p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <strong>Compétences</strong>
+                                    <p>HTML5, CSS3, Animations</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-bullseye"></i>
+                                <div>
+                                    <strong>Objectif</strong>
+                                    <p>Design élégant avec animations fluides</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Résultat</strong>
+                                    <p>Site moderne et animé</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <a href="helium/index.html" class="project-btn" target="_blank">
+                            Voir le projet <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Le Resto -->
+                <div class="project-card project-resto" data-category="html-css">
+                    <div class="project-image">
+                        <img src="img/projets/the-resto.png" alt="Le Resto">
+                        <div class="project-overlay">
+                            <a href="Le-resto/index.html" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Le Resto</h3>
+                        <p>Site web de restaurant avec une présentation soignée et appétissante</p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <strong>Compétences</strong>
+                                    <p>HTML5, CSS3, Design UI</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-bullseye"></i>
+                                <div>
+                                    <strong>Objectif</strong>
+                                    <p>Site web attrayant pour un restaurant</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Résultat</strong>
+                                    <p>Présentation soignée et appétissante</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <a href="Le-resto/index.html" class="project-btn" target="_blank">
+                            Voir le projet <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Générateur de Bulles -->
+                <div class="project-card project-bulles" data-category="javascript">
+                    <div class="project-image">
+                        <img src="img/projets/generateur-bulles.png" alt="Générateur de Bulles">
+                        <div class="project-overlay">
+                            <a href="generateur-de-bulles/index.html" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Générateur de Bulles</h3>
+                        <p>Application JavaScript interactive pour créer des animations de bulles</p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <strong>Compétences</strong>
+                                    <p>HTML5, CSS3, JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-bullseye"></i>
+                                <div>
+                                    <strong>Objectif</strong>
+                                    <p>Créer une application interactive animée</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Résultat</strong>
+                                    <p>Animation dynamique de bulles</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="generateur-de-bulles/index.html" class="project-btn" target="_blank">
+                            Voir le projet <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Integration Run -->
+                <div class="project-card project-integration" data-category="html-css">
+                    <div class="project-image">
+                        <img src="img/projets/integration-run.png" alt="Integration Run">
+                        <div class="project-overlay">
+                            <a href="Integration-run/index.html" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Integration Run</h3>
+                        <p>Projet d'intégration web avec mise en page complexe</p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <strong>Compétences</strong>
+                                    <p>HTML5, CSS3, Layout</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-bullseye"></i>
+                                <div>
+                                    <strong>Objectif</strong>
+                                    <p>Maîtriser l'intégration complexe</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Résultat</strong>
+                                    <p>Mise en page maîtrisée</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <a href="Integration-run/index.html" class="project-btn" target="_blank">
+                            Voir le projet <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Premier Site SASS -->
+                <div class="project-card project-sass" data-category="sass">
+                    <div class="project-image">
+                        <img src="img/projets/la-montagne.png" alt="Premier Site SASS">
+                        <div class="project-overlay">
+                            <a href="Premier-site-SASS/index.html" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Premier Site SASS</h3>
+                        <p>Apprentissage et mise en pratique du préprocesseur SASS/SCSS</p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <strong>Compétences</strong>
+                                    <p>HTML5, SASS/SCSS</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-bullseye"></i>
+                                <div>
+                                    <strong>Objectif</strong>
+                                    <p>Apprendre le préprocesseur SASS</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Résultat</strong>
+                                    <p>Code CSS maintenable et organisé</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">SASS</span>
+                        </div>
+                        <a href="Premier-site-SASS/index.html" class="project-btn" target="_blank">
+                            Voir le projet <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Scroll Popup -->
+                <div class="project-card project-scroll-popup" data-category="javascript">
+                    <div class="project-image">
+                        <img src="img/projets/scroll-popup.png" alt="Scroll Popup">
+                        <div class="project-overlay">
+                            <a href="Scroll-Popup/index.html" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Scroll Popup</h3>
+                        <p>Système de popup avec déclenchement au scroll</p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <strong>Compétences</strong>
+                                    <p>HTML5, CSS3, JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-bullseye"></i>
+                                <div>
+                                    <strong>Objectif</strong>
+                                    <p>Popup déclenchée par le scroll</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Résultat</strong>
+                                    <p>Système de popup interactif</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="Scroll-Popup/index.html" class="project-btn" target="_blank">
+                            Voir le projet <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Deuxième Site CSS -->
+                <div class="project-card project-css2" data-category="html-css">
+                    <div class="project-image">
+                        <img src="img/projets/deuxieme-site-css.png" alt="Deuxième Site CSS">
+                        <div class="project-overlay">
+                            <a href="deuxieme-site-css/index.html" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Deuxième Site CSS</h3>
+                        <p>Projet d'apprentissage CSS avec techniques avancées</p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <strong>Compétences</strong>
+                                    <p>HTML5, CSS3 avancé</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-bullseye"></i>
+                                <div>
+                                    <strong>Objectif</strong>
+                                    <p>Approfondir les techniques CSS</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Résultat</strong>
+                                    <p>Maîtrise des techniques avancées</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <a href="deuxieme-site-css/index.html" class="project-btn" target="_blank">
+                            Voir le projet <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Racine -->
+                <div class="project-card project-portfolio-racine" data-category="html-css">
+                    <div class="project-image">
+                        <img src="img/projets/premier-portfolio.png" alt="Portfolio Racine">
+                        <div class="project-overlay">
+                            <a href="Portfolio-racine/index.html" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Racine</h3>
+                        <p>Portfolio professionnel complet avec design traditionnel et navigation multi-pages</p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <strong>Compétences</strong>
+                                    <p>Design UI/UX, Architecture web</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-bullseye"></i>
+                                <div>
+                                    <strong>Objectif</strong>
+                                    <p>Site multi-pages responsive</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Résultat</strong>
+                                    <p>Portfolio complet fonctionnel</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <a href="Portfolio-racine/index.html" class="project-btn" target="_blank">
+                            Voir le projet <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Intéressé par une collaboration ? N'hésitez pas à me contacter !</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>sylvain.laurent123@sfr.fr</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/Sylvain-code815" target="_blank">@Sylvain-code815</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Localisation</h3>
+                            <p>France, Blois</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Sylvain-code815" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span>Envoyer le message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Sylvain. Tous droits réservés.</p>
+                <p>Fait avec <i class="fas fa-heart"></i> et beaucoup de café</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio-script.js"></script>
+</body>
+</html>
